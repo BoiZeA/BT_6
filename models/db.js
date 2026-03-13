@@ -30,6 +30,19 @@ const database = {
       loginCount: 5,
       isDeleted: false,
       timestamp: new Date()
+    },
+    {
+      _id: userIdCounter++,
+      username: 'bo',
+      password: '456',
+      email: 'bo123@example.com',
+      fullName: 'User Bo',
+      avatarUrl: 'https://i.sstatic.net/l60Hf.png',
+      status: true,
+      role: 2,
+      loginCount: 0,
+      isDeleted: false,
+      timestamp: new Date()
     }
   ],
   roleIdCounter,
