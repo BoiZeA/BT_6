@@ -17,7 +17,7 @@ exports.login = (req, res) => {
     }
 
     const db = require('../models/db');
-    const user = db.users.find(u => u.username === username && u.password === password && !u.isDeleted && u.status === true);
+    const user = db.users.find(u => u.username === username && u.password === password && !u.isDeleted);
 
     if (!user) {
       return res.status(401).json({
